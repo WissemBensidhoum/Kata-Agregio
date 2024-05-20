@@ -1,4 +1,4 @@
-package kata.agregio;
+package kata.agregio.service;
 
 import kata.agregio.core.PageableMapper;
 import kata.agregio.park.mapper.ParkMapper;
@@ -14,7 +14,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static kata.agregio.core.EnergyType.Wind;
+import static kata.agregio.core.EnergyType.WIND;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
@@ -40,11 +40,11 @@ class ParkServiceTest {
     @DisplayName("it should create park")
     void createParkTest() {
         // GIVEN
-        Park park = new Park.Builder().energyType(Wind)
+        Park park = new Park.Builder().energyType(WIND)
                 .capacity(50000)
                 .build();
 
-        ParkRequestDto parkRequestDto = new ParkRequestDto(Wind, 50000);
+        ParkRequestDto parkRequestDto = new ParkRequestDto(WIND, 50000);
 
         // WHEN
         parkService.create(parkRequestDto);
