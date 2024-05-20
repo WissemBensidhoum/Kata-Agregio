@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/ma_db}
+    username: ${POSTGRES_USER:madmin}
+    password: ${POSTGRES_PASSWORD:madmin}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
