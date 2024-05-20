@@ -19,7 +19,7 @@ public class TimeBlock {
     private double priceFloor;
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(
-            name = "TimeBlock_Producer",
+            name = "time_block_producer",
             joinColumns = {@JoinColumn(name = "time_block_id")},
             inverseJoinColumns = {@JoinColumn(name = "park_id")}
     )
