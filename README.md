@@ -61,6 +61,10 @@ The application will be available at http://localhost:8080.
 API endpoints are documented via Swagger. Once the application is running, access http://localhost:8080/swagger-ui.html
 to explore and test the endpoints.
 
+### DB-Adminer
+
+A DB-Adminer for the database is available at http://localhost:18080/.
+
 ## Authors
 
 Wissem Bensidhoum
